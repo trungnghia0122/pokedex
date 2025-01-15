@@ -14,7 +14,7 @@ export function SideNav(props) {
       {first151Pokemon.map((pokemon, index) => {
         return (
           <button
-            onClick={() => setSelectedPokemon(pokemon)}
+            onClick={() => setSelectedPokemon(index)}
             className={`${"nav-card"}`}
             key={index}
           >
