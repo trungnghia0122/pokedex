@@ -116,13 +116,7 @@ export function PokeCard(props) {
         >
           <div>
             <h6>Name</h6>
-            <h2>
-              {skill.name
-                .replaceAll("-", " ")
-                .split(" ")
-                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(" ")}
-            </h2>
+            <h2 className='skill-name'>{skill.name.replaceAll("-", " ")}</h2>
           </div>
           <div>
             <h6>Description</h6>
