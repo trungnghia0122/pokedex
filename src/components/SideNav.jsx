@@ -8,6 +8,7 @@ export function SideNav(props) {
     selectedPokemon,
     handleToggleMenu,
     showSideMenu,
+    setShowSideMenu,
   } = props
 
   const filteredPokemon = first151Pokemon.filter((val, index) => {
@@ -38,8 +39,8 @@ export function SideNav(props) {
           <button
             onClick={() => {
               setSelectedPokemon(truePokemonIndex)
-              setSearchValue("")
-              handleToggleMenu(!showSideMenu)
+              // setSearchValue("")
+              setShowSideMenu(false)
             }}
             className={`${"nav-card"} ${
               truePokemonIndex === selectedPokemon ? "nav-card-selected" : ""

@@ -15,11 +15,12 @@ export function PokeCard(props) {
   const abortControllerRef = useRef(null)
   const skillAbortControllerRef = useRef(null)
 
-  const { name, height, abilities, stats, types, moves, sprites } = data || {}
+  const { name, stats, types, moves, sprites } = data || {}
 
-  const imgList = Object.keys(sprites || {}).filter((sprite) => {
-    return sprites[sprite] !== null && !["versions", "other"].includes(sprite)
-  })
+  const imgList = Object.keys(sprites || {}).filter(
+    (sprite) =>
+      sprites[sprite] !== null && !["versions", "other"].includes(sprite)
+  )
 
   const skillList = moves?.filter((val) =>
     val.version_group_details.some(

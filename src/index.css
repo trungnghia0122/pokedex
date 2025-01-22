@@ -46,7 +46,7 @@ header h1,
 }
 
 ::-webkit-scrollbar {
-  /* width: 0px; */
+  width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
 

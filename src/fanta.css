@@ -126,25 +126,11 @@ body {
   line-height: 1.6rem;
 }
 
-/* Special */
-.text-gradient {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: linear-gradient(
-    135deg,
-    var(--gradient-start) 0,
-    var(--gradient-end) 100%
-  );
-  background-size: 100%;
-  -webkit-box-decoration-break: clone;
-}
-
 /* Typography */
 h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 button {
   font-family: "Grenze", serif;
@@ -171,11 +157,6 @@ h4 {
   line-height: 1.75rem;
 }
 
-h5 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 h6 {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -192,80 +173,17 @@ span {
   line-height: inherit;
 }
 
-/* Content Sectioning */
-
-main {
-}
-
-header {
-}
-
-footer {
-}
-
-nav {
-}
-
-section {
-}
-
-address {
-  font-style: normal;
-}
-
-aside {
-  float: right;
-  width: 40%;
-  padding: 0.75rem;
-  margin: 0.5rem;
-  font-style: italic;
-  color: var(--color-primary);
-  background-color: var(--background-muted);
-  border-radius: var(--border-radius-large);
-}
-
-/* Text Content */
-blockquote {
-  position: relative;
-  padding-left: 1.5rem;
-  margin: 0;
-}
-
-blockquote::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border-left: 7px solid var(--border-primary);
-  border-radius: 6px;
-}
-
-blockquote footer {
-  padding-top: 1rem;
-}
-
 dd {
   padding-bottom: 11px;
-}
-
-dl {
 }
 
 dt {
   font-weight: bold;
 }
 
-figure {
-}
-
 figcaption {
   padding-top: 10px;
   font-size: 0.8rem;
-}
-
-hr {
 }
 
 ul,
@@ -276,78 +194,6 @@ ol {
 
 li {
   line-height: 1.6em;
-}
-
-/* Inline Text Elements */
-
-a {
-  color: var(--color-link);
-}
-
-a:active,
-a:focus,
-a:hover {
-  text-decoration: none;
-}
-
-mark,
-samp,
-kbd,
-code,
-time {
-  border-radius: var(--highlight-border-radius, 4px);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-mark {
-  background-color: var(--color-highlight);
-  padding: 0 4px;
-}
-
-samp {
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  background-color: var(--background-muted);
-  color: var(--color-primary);
-}
-
-kbd,
-time {
-  padding: 0rem 0.5rem;
-  background-color: var(--background-muted);
-  color: var(--color-primary);
-}
-
-code,
-pre {
-  font-size: 0.9em;
-  padding: 0.2rem 0.5rem;
-  background: var(--background-muted);
-  border: 1px solid var(--border-primary);
-  max-width: fit-content;
-  overflow-x: auto;
-}
-
-pre > code {
-  padding: 10px;
-  border: 0;
-  display: block;
-  overflow-x: auto;
-}
-
-pre {
-  border-radius: var(--border-radius-large);
-}
-
-sup,
-sub {
-  line-height: normal;
-}
-
-/* Image and multimedia */
-audio {
-  width: 100%;
 }
 
 audio,
@@ -410,15 +256,6 @@ tfoot {
 table tr:hover td,
 tbody tr:nth-child(even):hover td {
   background-color: var(--background-muted);
-}
-
-/* Form elements */
-input,
-button,
-select,
-optgroup,
-textarea {
-  /* margin: 0; */
 }
 
 button,
@@ -562,53 +399,6 @@ select:hover {
   border-color: var(--border-highlight);
 }
 
-progress {
-  appearance: none;
-  height: 1rem;
-  margin: 0.75rem 0;
-}
-
-progress::-webkit-progress-bar {
-  background: var(--background-main);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--highlight-border-radius);
-}
-
-progress::-webkit-progress-value {
-  background-color: var(--color-link);
-  border-radius: var(--border-radius-small);
-}
-
-progress::-moz-progress-bar {
-  background-color: var(--color-link);
-  border-radius: var(--border-radius-small);
-}
-
-fieldset {
-  border: 1px solid var(--border-primary);
-  border-radius: var(--border-radius-small);
-  margin: 0;
-  margin-bottom: 6px;
-  padding: 1rem;
-  max-width: fit-content;
-}
-
-/* Interactive elements */
-details {
-  border: 1px solid var(--border-primary);
-  border-radius: var(--border-radius-small);
-  padding: 0.5rem 0.75rem;
-}
-
-summary {
-  font-weight: bold;
-}
-
-details[open] summary {
-  border-bottom: 1px solid var(--border-primary);
-  margin-bottom: 0.5rem;
-}
-
 .card,
 .button-card {
   background-color: var(--background-muted);
@@ -680,11 +470,6 @@ details[open] summary {
 
   h4 {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  h5 {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
